@@ -1,0 +1,6 @@
+{
+  "name": "VialKahoot CEA - Ley 769 de 2002",
+  "description": "Juego interactivo tipo Kahoot para centros de enseñanza automovilística en Colombia sobre el Título III de la Ley 769 de 2002.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

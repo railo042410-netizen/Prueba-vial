@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with safe margin -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" />
+  <rect x="16" y="16" width="480" height="480" rx="98" fill="none" stroke="#f59e0b" stroke-width="6" stroke-opacity="0.4" />
+
+  <!-- Colombian Flag Accent bar -->
+  <g transform="translate(156, 75)">
+    <rect x="0" y="0" width="200" height="8" rx="4" fill="#FCD116" />
+    <rect x="0" y="8" width="200" height="4" fill="#003893" />
+    <rect x="0" y="12" width="200" height="4" rx="2" fill="#CE1126" />
+  </g>
+
+  <!-- Steering Wheel & Car Symbol -->
+  <g transform="translate(256, 250)" filter="url(#glow)">
+    <!-- Outer Steering Wheel Ring -->
+    <circle r="120" fill="none" stroke="url(#goldGrad)" stroke-width="24" stroke-linecap="round" />
+    <!-- Inner Hub -->
+    <circle r="46" fill="#1e293b" stroke="#f59e0b" stroke-width="8" />
+
+    <!-- Spokes -->
+    <line x1="-108" y1="0" x2="-46" y2="0" stroke="url(#goldGrad)" stroke-width="16" stroke-linecap="round" />
+    <line x1="46" y1="0" x2="108" y2="0" stroke="url(#goldGrad)" stroke-width="16" stroke-linecap="round" />
+    <line x1="0" y1="46" x2="0" y2="108" stroke="url(#goldGrad)" stroke-width="16" stroke-linecap="round" />
+
+    <!-- Car Symbol inside hub -->
+    <path d="M-22,12 L-16,-4 L16,-4 L22,12 Z" fill="#f8fafc" />
+    <rect x="-24" y="8" width="48" height="12" rx="4" fill="#fbbf24" />
+    <circle cx="-14" cy="18" r="5" fill="#020617" />
+    <circle cx="14" cy="18" r="5" fill="#020617" />
+  </g>
+
+  <!-- 4 Kahoot Shapes -->
+  <g transform="translate(256, 410)">
+    <!-- Red Triangle -->
+    <path d="M-120,-8 L-106,16 L-134,16 Z" fill="#EF4444" />
+    <!-- Blue Square -->
+    <rect x="-52" y="-4" width="22" height="22" rx="3" fill="#3B82F6" />
+    <!-- Yellow Circle -->
+    <circle cx="40" cy="7" r="11" fill="#F59E0B" />
+    <!-- Green Diamond -->
+    <path d="M120,-5 L132,7 L120,19 L108,7 Z" fill="#10B981" />
+  </g>
+
+  <!-- Text CEA -->
+  <text x="256" y="470" font-family="system-ui, sans-serif" font-size="26" font-weight="900" fill="#f8fafc" text-anchor="middle" letter-spacing="4">
+    VIAL<tspan fill="#f59e0b">KAHOOT</tspan> CEA
+  </text>
+</svg>
